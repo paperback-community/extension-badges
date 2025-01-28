@@ -1,0 +1,176 @@
+{
+  "Main Source Type": {
+    "textColor": "#FFFFFF",
+    "backgroundColor": "#FF0000",
+    "badges": [
+      {
+        "label": "Official",
+        "description": "Licensed, authorized content directly from publishers."
+      },
+      {
+        "label": "Scanlator",
+        "description": "Content translated by fan groups or unofficial teams."
+      },
+      {
+        "label": "Aggregator",
+        "description": "Sites that collect content from other sources, typically without original translations or permissions."
+      }
+    ]
+  },
+  "Content Type": {
+    "textColor": "#000000",
+    "backgroundColor": "#FFD700",
+    "badges": [
+      {
+        "label": "Safe",
+        "description": "General content, safe for all audiences."
+      },
+      {
+        "label": "Mature",
+        "description": "Content suitable for older audiences, may include mild suggestive themes, partial nudity, or some violence, but not explicit."
+      },
+      {
+        "label": "Adult",
+        "description": "Explicit content, including pornographic manga, adult fanfiction, and explicit themes."
+      }
+    ]
+  },
+  "Reading Type": {
+    "textColor": "#FFFFFF",
+    "backgroundColor": "#C71585",
+    "badges": [
+      {
+        "label": "Manga",
+        "description": "Japanese comic-style works."
+      },
+      {
+        "label": "Webtoon",
+        "description": "Vertical-scrolling comics, typically from Korea."
+      },
+      {
+        "label": "Comics",
+        "description": "Western-style comics, typically from the U.S. and Europe."
+      },
+      {
+        "label": "Light Novel",
+        "description": "Japanese novels, often illustrated with manga-style art."
+      },
+      {
+        "label": "Novel",
+        "description": "Prose-based works, not illustrated."
+      },
+      {
+        "label": "Web Novel",
+        "description": "Novels published online, often in serialized format."
+      },
+      {
+        "label": "Doujinshi",
+        "description": "Fan-made manga/comics, typically based on existing series or original works, can be adult or general."
+      },
+      {
+        "label": "Fanfiction",
+        "description": "Fan-created stories, typically not illustrated, can be adult or general."
+      }
+    ]
+  },
+  "Language": {
+    "textColor": "#000000",
+    "backgroundColor": "#40E0D0",
+    "badges": [
+      {
+        "label": "Japanese",
+        "description": null
+      },
+      {
+        "label": "Korean",
+        "description": null
+      },
+      {
+        "label": "Chinese",
+        "description": null
+      },
+      {
+        "label": "English",
+        "description": null
+      },
+      {
+        "label": "French",
+        "description": null
+      },
+      {
+        "label": "Spanish",
+        "description": null
+      },
+      {
+        "label": "Multi Language",
+        "description": "Offers content in multiple languages."
+      }
+    ]
+  },
+  "Release Speed": {
+    "textColor": "#000000",
+    "backgroundColor": "#00FF00",
+    "badges": [
+      {
+        "label": "Official Simul",
+        "description": "The official release or a release simultaneous with it, typically from authorized sources."
+      },
+      {
+        "label": "Fast Release",
+        "description": "Content released within a few hours of the original source."
+      },
+      {
+        "label": "Regular Release",
+        "description": "Content released within 12 hours of the original source."
+      },
+      {
+        "label": "Slow Release",
+        "description": "Content released 24+ hours after the original source."
+      }
+    ]
+  },
+  "Image Quality": {
+    "textColor": "#FFFFFF",
+    "backgroundColor": "#0000FF",
+    "badges": [
+      {
+        "label": "Good Images",
+        "description": "High resolution with minimal compression, clear and crisp images."
+      },
+      {
+        "label": "Ok Images",
+        "description": "Standard resolution with moderate compression, decent quality but not sharp."
+      },
+      {
+        "label": "Bad Images",
+        "description": "Low resolution with high compression, pixelated or blurry images."
+      }
+    ]
+  },
+  "Translation & Typesetting": {
+    "textColor": "#FFFFFF",
+    "backgroundColor": "#1E90FF",
+    "badges": [
+      {
+        "label": "Good Translations",
+        "description": "Professionally translated and typeset, minimal errors, and proper formatting."
+      },
+      {
+        "label": "Ok Translations",
+        "description": "Some minor errors or awkward phrasing but generally understandable."
+      },
+      {
+        "label": "Bad Translations",
+        "description": "Noticeable translation issues or poorly done typesetting, making it hard to read."
+      },
+      {
+        "label": "Machine Translations",
+        "description": "Content translated automatically using machine translation tools, often with significant errors or awkward phrasing and no typesetting."
+      },
+      {
+        "label": "Raw Content",
+        "description": "No translation or typesetting done, raw scans with original text."
+      }
+    ]
+  }
+}
