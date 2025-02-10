@@ -1,7 +1,25 @@
 {
-  "Main Source Type": {
+  "extensionType": {
     "textColor": "#FFFFFF",
     "backgroundColor": "#FF0000",
+    "badges": [
+      {
+        "label": "Content Providing",
+        "description": "Provides actual content (official, scanlated, or aggregated)."
+      },
+      {
+        "label": "Tracker",
+        "description": "Used to track and manage content, helping users organize and monitor their reading progress."
+      },
+      {
+        "label": "Collection Manager",
+        "description": "Tools that allow users to save, organize, and manage a personal library of content."
+      }
+    ]
+  },
+  "contentSource": {
+    "textColor": "#FFFFFF",
+    "backgroundColor": "#006400",
     "badges": [
       {
         "label": "Official",
@@ -9,15 +27,15 @@
       },
       {
         "label": "Scanlator",
-        "description": "Content translated by fan groups or unofficial teams."
+        "description": "Content translated by fan groups or unofficial teams, often without permission."
       },
       {
         "label": "Aggregator",
-        "description": "Sites that collect content from other sources, typically without original translations or permissions."
+        "description": "Sites that collect content from other sources, typically without official translations or permissions."
       }
     ]
   },
-  "Content Type": {
+  "contentType": {
     "textColor": "#000000",
     "backgroundColor": "#FFD700",
     "badges": [
@@ -31,11 +49,11 @@
       },
       {
         "label": "Adult",
-        "description": "Explicit content, including pornographic manga, adult fanfiction, and explicit themes."
+        "description": "Explicit content, including pornographic material, adult fanfiction, and explicit themes."
       }
     ]
   },
-  "Reading Type": {
+  "contentFormat": {
     "textColor": "#FFFFFF",
     "backgroundColor": "#C71585",
     "badges": [
@@ -73,33 +91,33 @@
       }
     ]
   },
-  "Language": {
+  "contentLanguage": {
     "textColor": "#000000",
-    "backgroundColor": "#40E0D0",
+    "backgroundColor": "#00ffff",
     "badges": [
       {
         "label": "Japanese",
-        "description": null
+        "description": "Content in the Japanese language."
       },
       {
         "label": "Korean",
-        "description": null
+        "description": "Content in the Korean language."
       },
       {
         "label": "Chinese",
-        "description": null
+        "description": "Content in the Chinese language."
       },
       {
         "label": "English",
-        "description": null
+        "description": "Content in the English language."
       },
       {
         "label": "French",
-        "description": null
+        "description": "Content in the French language."
       },
       {
         "label": "Spanish",
-        "description": null
+        "description": "Content in the Spanish language."
       },
       {
         "label": "Multi Language",
@@ -107,7 +125,7 @@
       }
     ]
   },
-  "Release Speed": {
+  "contentReleaseSpeed": {
     "textColor": "#000000",
     "backgroundColor": "#00FF00",
     "badges": [
@@ -129,7 +147,7 @@
       }
     ]
   },
-  "Image Quality": {
+  "contentImageQuality": {
     "textColor": "#FFFFFF",
     "backgroundColor": "#0000FF",
     "badges": [
@@ -147,7 +165,7 @@
       }
     ]
   },
-  "Translation & Typesetting": {
+  "contentTranslationTypesetting": {
     "textColor": "#FFFFFF",
     "backgroundColor": "#1E90FF",
     "badges": [
@@ -174,3 +192,4 @@
     ]
   }
 }
+
