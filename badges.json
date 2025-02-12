@@ -152,11 +152,11 @@
     "backgroundColor": "#0000FF",
     "badges": [
       {
-        "label": "Good Images",
+        "label": "Best Images",
         "description": "High resolution with minimal compression, clear and crisp images."
       },
       {
-        "label": "Ok Images",
+        "label": "Good Images",
         "description": "Standard resolution with moderate compression, decent quality but not sharp."
       },
       {
@@ -170,11 +170,11 @@
     "backgroundColor": "#1E90FF",
     "badges": [
       {
-        "label": "Good Translations",
+        "label": "Best Translations",
         "description": "Professionally translated and typeset, minimal errors, and proper formatting."
       },
       {
-        "label": "Ok Translations",
+        "label": "Good Translations",
         "description": "Some minor errors or awkward phrasing but generally understandable."
       },
       {
