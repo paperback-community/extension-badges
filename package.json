@@ -1,0 +1,36 @@
+{
+  "name": "@paperback-community/extensions-badges",
+  "version": "1.0.0",
+  "description": "Badge definitions for Paperback extensions",
+  "keywords": [
+    "paperback",
+    "badges",
+    "extensions"
+  ],
+  "homepage": "https://github.com/paperback-community/extension-badges#readme",
+  "bugs": {
+    "url": "https://github.com/paperback-community/extension-badges/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paperback-community/extension-badges.git"
+  },
+  "license": "MIT",
+  "author": "Paperback Community",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "@paperback/types": "^1.0.0-alpha.35",
+    "eslint": "^9.20.1",
+    "prettier": "^3.5.1",
+    "typescript": "^5.7.3"
+  }
+}
