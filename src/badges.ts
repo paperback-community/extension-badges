@@ -16,17 +16,17 @@ export const ContentSourceBadge: ContentSource = {
   Official: {
     label: "Official",
     textColor: "#FFFFFF",
-    backgroundColor: "#006400",
+    backgroundColor: "#FF453A",
   },
   Scanlator: {
     label: "Scanlator",
-    textColor: "#FFFFFF",
-    backgroundColor: "#006400",
+    textColor: "#000000",
+    backgroundColor: "#FF9F0A",
   },
   Aggregator: {
     label: "Aggregator",
     textColor: "#FFFFFF",
-    backgroundColor: "#006400",
+    backgroundColor: "#BF5AF2",
   },
 };
 
@@ -56,42 +56,42 @@ export const ContentFormatBadge: ContentFormat = {
   Manga: {
     label: "Manga",
     textColor: "#FFFFFF",
-    backgroundColor: "#C71585",
+    backgroundColor: "#5856D6",
   },
   Webtoon: {
     label: "Webtoon",
-    textColor: "#FFFFFF",
-    backgroundColor: "#C71585",
+    textColor: "#000000",
+    backgroundColor: "#32D74B",
   },
   Comics: {
     label: "Comics",
     textColor: "#FFFFFF",
-    backgroundColor: "#C71585",
+    backgroundColor: "#0A84FF",
   },
   LightNovel: {
     label: "Light Novel",
     textColor: "#FFFFFF",
-    backgroundColor: "#C71585",
+    backgroundColor: "#BF5AF2",
   },
   Novel: {
     label: "Novel",
     textColor: "#FFFFFF",
-    backgroundColor: "#C71585",
+    backgroundColor: "#BF5AF2",
   },
   WebNovel: {
     label: "Web Novel",
     textColor: "#FFFFFF",
-    backgroundColor: "#C71585",
+    backgroundColor: "#BF5AF2",
   },
   Doujinshi: {
     label: "Doujinshi",
     textColor: "#FFFFFF",
-    backgroundColor: "#C71585",
+    backgroundColor: "#FF375F",
   },
   FanFiction: {
     label: "Fanfiction",
     textColor: "#FFFFFF",
-    backgroundColor: "#C71585",
+    backgroundColor: "#AC8E68",
   },
 };
 
@@ -112,23 +112,23 @@ type ContentReleaseSpeed = {
 export const ContentReleaseSpeedBadge: ContentReleaseSpeed = {
   Simul: {
     label: "Official Simul",
-    textColor: "#000000",
-    backgroundColor: "#00FF00",
+    textColor: "#FFFFFF",
+    backgroundColor: "#636366",
   },
   Fast: {
     label: "Fast Release",
     textColor: "#000000",
-    backgroundColor: "#00FF00",
+    backgroundColor: "#32D74B",
   },
   Regular: {
     label: "Regular Release",
-    textColor: "#000000",
-    backgroundColor: "#00FF00",
+    textColor: "#FFFFFF",
+    backgroundColor: "#30B0C7",
   },
   Slow: {
     label: "Slow Release",
-    textColor: "#000000",
-    backgroundColor: "#00FF00",
+    textColor: "#FFFFFF",
+    backgroundColor: "#0A84FF",
   },
 };
 
@@ -147,18 +147,18 @@ type ContentImageQuality = {
 export const ContentImageQualityBadge: ContentImageQuality = {
   Best: {
     label: "Best Images",
-    textColor: "#FFFFFF",
-    backgroundColor: "#0000FF",
+    textColor: "#000000",
+    backgroundColor: "#32D74B",
   },
   Good: {
     label: "Good Images",
-    textColor: "#FFFFFF",
-    backgroundColor: "#0000FF",
+    textColor: "#000000",
+    backgroundColor: "#FFA000",
   },
   Bad: {
     label: "Bad Images",
     textColor: "#FFFFFF",
-    backgroundColor: "#0000FF",
+    backgroundColor: "#FF453A",
   },
 };
 
@@ -166,7 +166,7 @@ type ContentTranslation = {
   /** Professionally translated and typeset, minimal errors, and proper formatting. */
   Best: SourceBadge;
   /** Some minor errors or awkward phrasing but generally understandable. */
-  Good: SourceBadge;
+  Average: SourceBadge;
   /** Noticeable translation issues or poorly done typesetting, making it hard to read. */
   Bad: SourceBadge;
   /** Content translated automatically using machine translation tools, often with significant errors or awkward phrasing and no typesetting. */
@@ -180,28 +180,28 @@ type ContentTranslation = {
  */
 export const ContentTranslationBadge: ContentTranslation = {
   Best: {
-    label: "Best Translations",
-    textColor: "#FFFFFF",
-    backgroundColor: "#1E90FF",
-  },
-  Good: {
     label: "Good Translations",
-    textColor: "#FFFFFF",
-    backgroundColor: "#1E90FF",
+    textColor: "#000000",
+    backgroundColor: "#30D158",
+  },
+  Average: {
+    label: "Average Translations",
+    textColor: "#000000",
+    backgroundColor: "#FFA000",
   },
   Bad: {
     label: "Bad Translations",
     textColor: "#FFFFFF",
-    backgroundColor: "#1E90FF",
+    backgroundColor: "#FF453A",
   },
   Machine: {
     label: "Machine Translations",
     textColor: "#FFFFFF",
-    backgroundColor: "#1E90FF",
+    backgroundColor: "#FF375F",
   },
   Raw: {
     label: "Raw Content",
     textColor: "#FFFFFF",
-    backgroundColor: "#1E90FF",
+    backgroundColor: "#636366",
   },
 };
