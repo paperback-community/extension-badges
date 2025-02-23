@@ -24,16 +24,23 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "husky && tsc",
+    "lint": "eslint --fix",
+    "lint:check": "eslint",
+    "format": "prettier --write '**/*{.md,.yaml,.json,.js,.ts}'",
+    "format:check": "prettier --check '**/*{.md,.yaml,.json,.js,.ts}'",
+    "test": "tsc --project tsconfig.json --noEmit && npm run lint:check && npm run format:check && tsc"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@paperback/types": "^1.0.0-alpha.35",
+    "@types/eslint": "^9.6.1",
+    "@types/eslint__js": "^8.42.3",
     "eslint": "^9.20.1",
+    "husky": "^9.1.7",
     "prettier": "^3.5.1",
-    "typescript": "^5.7.3"
-  },
-  "dependencies": {
+    "typescript": "^5.7.3",
     "typescript-eslint": "^8.24.1"
   }
 }
