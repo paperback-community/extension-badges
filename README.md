@@ -1,4 +1,4 @@
-# Paperback Extensions Badges
+# Extension Badges
 
 A collection of standardized badges for Paperback extensions.
 
@@ -11,19 +11,27 @@ npm install @paperback-community/extensions-badges
 ## Usage
 
 ```typescript
+// pbconfig.ts
 import {
   ContentFormatBadge,
   ContentImageQualityBadge,
-  ContentLanguageBadge,
   ContentReleaseSpeedBadge,
   ContentSourceBadge,
   ContentTranslationTypeSettingBadge,
-  ContentTypeBadge,
-  ExtensionTypeBadge,
 } from "@paperback-community/extensions-badges";
+import { ContentRating, SourceInfo, SourceIntents } from "@paperback/types";
 
-// Example usage
-const badge = ExtensionTypeBadge.Provider;
+export default {
+  name: "ExtensionA",
+  description: "A paperback extension.",
+  // Example Usage
+  badges: [
+    ContentSourceBadge.Aggregator,
+    ContentFormat.Manga,
+    ContentTranslationBadge.Good,
+  ],
+  // ... Rest of config
+} satisfies SourceInfo;
 ```
 
 ## Available Badge Categories

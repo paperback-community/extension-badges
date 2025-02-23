@@ -1,36 +1,5 @@
 import { SourceBadge } from "@paperback/types";
 
-type ExtensionType = {
-  /** Provides actual content (official, scanlated, or aggregated) */
-  Provider: SourceBadge;
-  /** Used to track and manage content, helping users organize and monitor their reading progress */
-  Tracker: SourceBadge;
-  /** Tools that allow users to save, organize, and manage a personal library of content */
-  ContentManager: SourceBadge;
-};
-
-/**
- * Badge definitions for various content sources, types, and formats.
- * Includes providers, trackers, and content managers.
- */
-export const ExtensionTypeBadge: ExtensionType = {
-  Provider: {
-    label: "Content Providing",
-    textColor: "#FFFFFF",
-    backgroundColor: "#FF0000",
-  },
-  Tracker: {
-    label: "Tracker",
-    textColor: "#FFFFFF",
-    backgroundColor: "#FF0000",
-  },
-  ContentManager: {
-    label: "Collection Manager",
-    textColor: "#FFFFFF",
-    backgroundColor: "#FF0000",
-  },
-};
-
 type ContentSource = {
   /** Licensed, authorized content directly from publishers. */
   Official: SourceBadge;
@@ -58,36 +27,6 @@ export const ContentSourceBadge: ContentSource = {
     label: "Aggregator",
     textColor: "#FFFFFF",
     backgroundColor: "#006400",
-  },
-};
-
-type ContentType = {
-  /** General content, safe for all audiences. */
-  Safe: SourceBadge;
-  /** Content suitable for older audiences, may include mild suggestive themes, partial nudity, or some violence, but not explicit. */
-  Mature: SourceBadge;
-  /** Explicit content, including pornographic material, adult fanfiction, and explicit themes. */
-  Adult: SourceBadge;
-};
-
-/**
- * Badge definitions for content types, indicating whether they are safe for all audiences, mature, or adult.
- */
-export const ContentTypeBadge: ContentType = {
-  Safe: {
-    label: "Safe",
-    textColor: "#000000",
-    backgroundColor: "#FFD700",
-  },
-  Mature: {
-    label: "Mature",
-    textColor: "#000000",
-    backgroundColor: "#FFD700",
-  },
-  Adult: {
-    label: "Adult",
-    textColor: "#000000",
-    backgroundColor: "#FFD700",
   },
 };
 
@@ -153,64 +92,6 @@ export const ContentFormatBadge: ContentFormat = {
     label: "Fanfiction",
     textColor: "#FFFFFF",
     backgroundColor: "#C71585",
-  },
-};
-
-type ContentLanguage = {
-  /** Content in the Japanese language. */
-  Japanese: SourceBadge;
-  /** Content in the Korean language. */
-  Korean: SourceBadge;
-  /** Content in the Chinese language. */
-  Chinese: SourceBadge;
-  /** Content in the English language. */
-  English: SourceBadge;
-  /** Content in the French language. */
-  French: SourceBadge;
-  /** Content in the Spanish language. */
-  Spanish: SourceBadge;
-  /** Offers content in multiple languages. */
-  MultiLanguage: SourceBadge;
-};
-
-/**
- * Badge definitions for content languages, including Japanese, Korean, Chinese, English, and others.
- */
-export const ContentLanguageBadge: ContentLanguage = {
-  Japanese: {
-    label: "Japanese",
-    textColor: "#000000",
-    backgroundColor: "#00ffff",
-  },
-  Korean: {
-    label: "Korean",
-    textColor: "#000000",
-    backgroundColor: "#00ffff",
-  },
-  Chinese: {
-    label: "Chinese",
-    textColor: "#000000",
-    backgroundColor: "#00ffff",
-  },
-  English: {
-    label: "English",
-    textColor: "#000000",
-    backgroundColor: "#00ffff",
-  },
-  French: {
-    label: "French",
-    textColor: "#000000",
-    backgroundColor: "#00ffff",
-  },
-  Spanish: {
-    label: "Spanish",
-    textColor: "#000000",
-    backgroundColor: "#00ffff",
-  },
-  MultiLanguage: {
-    label: "Multi Language",
-    textColor: "#000000",
-    backgroundColor: "#00ffff",
   },
 };
 
