@@ -4,8 +4,8 @@
   "description": "Badge definitions for Paperback extensions",
   "keywords": [
     "paperback",
-    "badges",
-    "extensions"
+    "extension",
+    "badges"
   ],
   "homepage": "https://github.com/paperback-community/extension-badges#readme",
   "bugs": {

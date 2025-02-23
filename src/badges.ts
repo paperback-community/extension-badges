@@ -16,17 +16,17 @@ export const ContentSourceBadge: ContentSource = {
   Official: {
     label: "Official",
     textColor: "#FFFFFF",
-    backgroundColor: "#FF453A",
+    backgroundColor: "#172554", // blue-950
   },
   Scanlator: {
     label: "Scanlator",
-    textColor: "#000000",
-    backgroundColor: "#FF9F0A",
+    textColor: "#FFFFFF",
+    backgroundColor: "#1e3a8a", // blue-900
   },
   Aggregator: {
     label: "Aggregator",
     textColor: "#FFFFFF",
-    backgroundColor: "#BF5AF2",
+    backgroundColor: "#1d4ed8", // blue-700
   },
 };
 
@@ -56,42 +56,42 @@ export const ContentFormatBadge: ContentFormat = {
   Manga: {
     label: "Manga",
     textColor: "#FFFFFF",
-    backgroundColor: "#5856D6",
+    backgroundColor: "#4c1d95", // purple-900
   },
   Webtoon: {
     label: "Webtoon",
-    textColor: "#000000",
-    backgroundColor: "#32D74B",
+    textColor: "#FFFFFF",
+    backgroundColor: "#5b21b6", // purple-800
   },
   Comics: {
     label: "Comics",
     textColor: "#FFFFFF",
-    backgroundColor: "#0A84FF",
+    backgroundColor: "#6d28d9", // purple-700
   },
   LightNovel: {
     label: "Light Novel",
     textColor: "#FFFFFF",
-    backgroundColor: "#BF5AF2",
+    backgroundColor: "#7c3aed", // purple-600
   },
   Novel: {
     label: "Novel",
     textColor: "#FFFFFF",
-    backgroundColor: "#BF5AF2",
+    backgroundColor: "#8b5cf6", // purple-500
   },
   WebNovel: {
     label: "Web Novel",
     textColor: "#FFFFFF",
-    backgroundColor: "#BF5AF2",
+    backgroundColor: "#9333ea", // purple-600
   },
   Doujinshi: {
     label: "Doujinshi",
     textColor: "#FFFFFF",
-    backgroundColor: "#FF375F",
+    backgroundColor: "#a855f7", // purple-500
   },
   FanFiction: {
     label: "Fanfiction",
     textColor: "#FFFFFF",
-    backgroundColor: "#AC8E68",
+    backgroundColor: "#c084fc", // purple-400
   },
 };
 
@@ -113,22 +113,22 @@ export const ContentReleaseSpeedBadge: ContentReleaseSpeed = {
   Simul: {
     label: "Official Simul",
     textColor: "#FFFFFF",
-    backgroundColor: "#636366",
+    backgroundColor: "#334155", // slate-700
   },
   Fast: {
     label: "Fast Release",
-    textColor: "#000000",
-    backgroundColor: "#32D74B",
+    textColor: "#FFFFFF",
+    backgroundColor: "#15803d", // green-700
   },
   Regular: {
     label: "Regular Release",
-    textColor: "#FFFFFF",
-    backgroundColor: "#30B0C7",
+    textColor: "#000000",
+    backgroundColor: "#fbbf24", // amber-400
   },
   Slow: {
     label: "Slow Release",
     textColor: "#FFFFFF",
-    backgroundColor: "#0A84FF",
+    backgroundColor: "#dc2626", // red-600
   },
 };
 
@@ -147,18 +147,18 @@ type ContentImageQuality = {
 export const ContentImageQualityBadge: ContentImageQuality = {
   Best: {
     label: "Best Images",
-    textColor: "#000000",
-    backgroundColor: "#32D74B",
+    textColor: "#FFFFFF",
+    backgroundColor: "#15803d", // green-700
   },
   Good: {
     label: "Good Images",
     textColor: "#000000",
-    backgroundColor: "#FFA000",
+    backgroundColor: "#fbbf24", // amber-400
   },
   Bad: {
     label: "Bad Images",
     textColor: "#FFFFFF",
-    backgroundColor: "#FF453A",
+    backgroundColor: "#dc2626", // red-600
   },
 };
 
@@ -181,27 +181,27 @@ type ContentTranslation = {
 export const ContentTranslationBadge: ContentTranslation = {
   Best: {
     label: "Good Translations",
-    textColor: "#000000",
-    backgroundColor: "#30D158",
+    textColor: "#FFFFFF",
+    backgroundColor: "#15803d", // green-700
   },
   Average: {
     label: "Average Translations",
     textColor: "#000000",
-    backgroundColor: "#FFA000",
+    backgroundColor: "#fbbf24", // amber-400
   },
   Bad: {
     label: "Bad Translations",
     textColor: "#FFFFFF",
-    backgroundColor: "#FF453A",
+    backgroundColor: "#ea580c", // orange-600
   },
   Machine: {
     label: "Machine Translations",
     textColor: "#FFFFFF",
-    backgroundColor: "#FF375F",
+    backgroundColor: "#dc2626", // red-600
   },
   Raw: {
     label: "Raw Content",
     textColor: "#FFFFFF",
-    backgroundColor: "#636366",
+    backgroundColor: "#334155", // slate-700
   },
 };
