@@ -1,3 +1,5 @@
+// @ts-check
+
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 
@@ -17,7 +19,7 @@ export default tseslint.config(
       parser: tseslint.parser,
       parserOptions: {
         projectService: true,
-        tsconfigRootDir: import.meta.dirname,
+        tsconfigRootDir: new URL(".", import.meta.url).pathname,
       },
     },
     rules: {
@@ -27,5 +29,8 @@ export default tseslint.config(
         { varsIgnorePattern: "^_$" },
       ],
     },
+  },
+  {
+    ignores: ["node_modules", "dist"],
   },
 );
