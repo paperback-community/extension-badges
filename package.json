@@ -36,7 +36,7 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@paperback/types": "^1.0.0-alpha.35",
     "@types/eslint": "^9.6.1",
-    "@types/eslint__js": "^8.42.3",
+    "@types/eslint__js": "^9.14.0",
     "eslint": "^9.21.0",
     "husky": "^9.1.7",
     "prettier": "^3.5.2",
