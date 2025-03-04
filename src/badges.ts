@@ -85,12 +85,12 @@ export const ContentFormatBadge: ContentFormat = {
   },
   Doujinshi: {
     label: "Doujinshi",
-    textColor: "#FFFFFF",
+    textColor: "#000000",
     backgroundColor: "#a855f7", // purple-500
   },
   FanFiction: {
     label: "Fanfiction",
-    textColor: "#FFFFFF",
+    textColor: "#000000",
     backgroundColor: "#c084fc", // purple-400
   },
 };
@@ -191,7 +191,7 @@ export const ContentTranslationBadge: ContentTranslation = {
   },
   Bad: {
     label: "Bad Translations",
-    textColor: "#FFFFFF",
+    textColor: "#000000",
     backgroundColor: "#ea580c", // orange-600
   },
   Machine: {
