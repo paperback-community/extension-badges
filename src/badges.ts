@@ -47,6 +47,8 @@ type ContentFormat = {
   Doujinshi: SourceBadge;
   /** Fan-created stories, typically not illustrated, can be adult or general. */
   FanFiction: SourceBadge;
+  /** Other content format. */
+  Other: SourceBadge;
 };
 
 /**
@@ -92,6 +94,11 @@ export const ContentFormatBadge: ContentFormat = {
     label: "Fanfiction",
     textColor: "#000000",
     backgroundColor: "#c084fc", // purple-400
+  },
+  Other: {
+    label: "Fanfiction",
+    textColor: "#000000",
+    backgroundColor: "#dab2ff", // purple-300
   },
 };
 
