@@ -3,11 +3,11 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { URL } from "node:url";
 import {
-  ContentFormatBadge,
-  ContentImageQualityBadge,
-  ContentReleaseSpeedBadge,
-  ContentSourceBadge,
-  ContentTranslationBadge,
+    ContentFormatBadge,
+    ContentImageQualityBadge,
+    ContentReleaseSpeedBadge,
+    ContentSourceBadge,
+    ContentTranslationBadge,
 } from "../../dist/badges.js";
 
 /**
@@ -15,15 +15,15 @@ import {
  * @returns {Promise<void>}
  */
 async function generatePreviewHtml() {
-  const __dirname = new URL(".", import.meta.url).pathname;
-  const templatePath = path.join(__dirname, "preview.template.html");
-  const outputPath = path.join(__dirname, "../../dist/preview.html");
+    const __dirname = new URL(".", import.meta.url).pathname;
+    const templatePath = path.join(__dirname, "index.template.html");
+    const outputPath = path.join(__dirname, "../../dist/index.html");
 
-  // Read the template
-  const template = await fs.readFile(templatePath, "utf-8");
+    // Read the template
+    const template = await fs.readFile(templatePath, "utf-8");
 
-  // Generate the badge definitions
-  const badgeDefinitions = `
+    // Generate the badge definitions
+    const badgeDefinitions = `
         const ContentSourceBadge = ${JSON.stringify(ContentSourceBadge, null, 4)};
         const ContentFormatBadge = ${JSON.stringify(ContentFormatBadge, null, 4)};
         const ContentReleaseSpeedBadge = ${JSON.stringify(ContentReleaseSpeedBadge, null, 4)};
@@ -54,14 +54,17 @@ async function generatePreviewHtml() {
         renderBadges(ContentTranslationBadge, 'translation-badges');
     `;
 
-  // Replace the placeholder with the actual badge definitions
-  const finalHtml = template.replace("// BADGES_PLACEHOLDER", badgeDefinitions);
+    // Replace the placeholder with the actual badge definitions
+    const finalHtml = template.replace(
+        "// BADGES_PLACEHOLDER",
+        badgeDefinitions,
+    );
 
-  // Ensure dist directory exists
-  await fs.mkdir(path.join(__dirname, "../../dist"), { recursive: true });
+    // Ensure dist directory exists
+    await fs.mkdir(path.join(__dirname, "../../dist"), { recursive: true });
 
-  // Write the final HTML
-  await fs.writeFile(outputPath, finalHtml, "utf-8");
+    // Write the final HTML
+    await fs.writeFile(outputPath, finalHtml, "utf-8");
 }
 
 generatePreviewHtml().catch(console.error);
