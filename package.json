@@ -1,46 +1,45 @@
 {
-  "name": "@paperback-community/extensions-badges",
-  "version": "1.0.0",
-  "description": "Badge definitions for Paperback extensions",
-  "keywords": [
-    "paperback",
-    "extension",
-    "badges"
-  ],
-  "homepage": "https://github.com/paperback-community/extension-badges#readme",
-  "bugs": {
-    "url": "https://github.com/paperback-community/extension-badges/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/paperback-community/extension-badges.git"
-  },
-  "license": "MIT",
-  "author": "Paperback Community",
-  "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "tsc && node ./src/preview/generate.js",
-    "lint": "eslint --fix",
-    "lint:check": "eslint",
-    "format": "prettier --write '**/*{.md,.yaml,.json,.js,.ts}'",
-    "format:check": "prettier --check '**/*{.md,.yaml,.json,.js,.ts}'",
-    "test": "tsc --project tsconfig.json --noEmit && npm run lint:check && npm run format:check && npm run build",
-    "prepare": "husky && npm run build"
-  },
-  "devDependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
-    "@paperback/types": "^1.0.0-alpha.35",
-    "@types/eslint": "^9.6.1",
-    "@types/eslint__js": "^8.42.3",
-    "eslint": "^9.21.0",
-    "husky": "^9.1.7",
-    "prettier": "^3.5.2",
-    "typescript": "^5.7.3",
-    "typescript-eslint": "^8.25.0"
-  }
+    "name": "@paperback-community/extensions-badges",
+    "version": "1.0.0-alpha.1",
+    "description": "Badge definitions for Paperback extensions",
+    "keywords": [
+        "Baperback",
+        "extension",
+        "badges"
+    ],
+    "homepage": "https://github.com/paperback-community/extension-badges#readme",
+    "bugs": {
+        "url": "https://github.com/paperback-community/extension-badges/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/paperback-community/extension-badges.git"
+    },
+    "license": "MIT",
+    "author": "Paperback Community",
+    "type": "module",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rm -rf dist && tsc --project tsconfig.json && node ./src/preview/generate.js",
+        "lint": "eslint --fix",
+        "lint:check": "eslint",
+        "format": "prettier --write '**/*{.md,.yaml,.json,.js,.ts}'",
+        "format:check": "prettier --check '**/*{.md,.yaml,.json,.js,.ts}'",
+        "test": "tsc --project tsconfig.json --noEmit && npm run lint:check && npm run format:check && npm run build",
+        "prepare": "husky"
+    },
+    "devDependencies": {
+        "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+        "@paperback/types": "^1.0.0-alpha.35",
+        "@types/eslint": "^9.6.1",
+        "eslint": "^9.21.0",
+        "husky": "^9.1.7",
+        "prettier": "^3.5.2",
+        "typescript": "^5.7.3",
+        "typescript-eslint": "^8.25.0"
+    }
 }
